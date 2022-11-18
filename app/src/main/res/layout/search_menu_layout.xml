@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_dialog_shape">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_text"
+        android:textColor="@color/app_blue"
+        android:textSize="@dimen/margin20"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin16"/>
+
+    <EditText
+        android:id="@+id/etSearchTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin55"
+        android:hint="@string/title_text"
+        android:layout_marginHorizontal="@dimen/margin20"
+        android:textSize="@dimen/text18sp"
+        android:layout_marginTop="@dimen/margin12"
+        android:paddingStart="@dimen/margin16"
+        android:background="@drawable/search_dialog_item_shape"/>
+
+    <EditText
+        android:id="@+id/etPage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin55"
+        android:hint="@string/quantity_text"
+        android:layout_marginHorizontal="@dimen/margin20"
+        android:textSize="@dimen/text18sp"
+        android:layout_marginTop="@dimen/margin12"
+        android:paddingStart="@dimen/margin16"
+        android:background="@drawable/search_dialog_item_shape"/>
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin55"
+        android:hint="@string/apply_btn_text"
+        android:layout_marginHorizontal="@dimen/margin20"
+        android:layout_marginTop="@dimen/margin12"
+        android:textSize="@dimen/text20sp"
+        android:gravity="center"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/margin32"
+        android:background="@drawable/search_dialog_btn_shape"/>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MovieMe</string>
+    <string name="search_title">Movies</string>
+    <string name="search_text">Search</string>
+    <string name="title_text">Title</string>
+    <string name="quantity_text">Quantity</string>
+    <string name="apply_btn_text">Apply</string>
+    <string name="leave_btn_text">Leave comment</string>
+    <string name="item_title">Movie info</string>
+    <string name="comment_text">COMMENTS</string>
+    <string name="ed_comment_text">Write your comment</string>
+    <string name="nothing_dialog">OOPS NOTHING IS HERE \nSET THE SEARCH PARAMETRS</string>
+</resources>

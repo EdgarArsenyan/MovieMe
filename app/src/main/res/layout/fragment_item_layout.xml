@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/screen_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="presentation.fragment.ItemFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_1"
+        app:title="@string/item_title"
+        app:titleMarginStart="@dimen/margin100"
+        android:background="@color/white"
+        app:titleTextColor="@color/app_blue" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin16"
+        android:paddingBottom="@dimen/margin16"
+        android:background="@drawable/movie_item_shape"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarItem">
+
+        <ImageView
+            android:id="@+id/ivItem"
+            android:layout_width="@dimen/margin150"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin24"
+            android:layout_marginTop="@dimen/margin16"
+            android:layout_marginBottom="@dimen/margin16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvItemTitle"
+            android:layout_width="@dimen/margin150"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin24"
+            android:layout_marginTop="@dimen/margin12"
+            android:textColor="@color/app_blue"
+            android:textSize="@dimen/text16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivItem"
+            app:layout_constraintTop_toTopOf="@+id/ivItem" />
+
+        <TextView
+            android:id="@+id/tvItemRealise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_passive_Color"
+            android:textSize="@dimen/text16sp"
+            app:layout_constraintStart_toStartOf="@+id/tvItemTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemTitle" />
+
+        <TextView
+            android:id="@+id/tvItemType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin32"
+            android:textColor="@color/text_passive_Color"
+            android:textSize="@dimen/text16sp"
+            app:layout_constraintStart_toStartOf="@+id/tvItemRealise"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemRealise" />
+
+        <ImageView
+            android:id="@+id/ivCommentIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_comment"
+            app:layout_constraintStart_toStartOf="@+id/tvItemType"
+            app:layout_constraintTop_toTopOf="@+id/ivLiveIcon" />
+
+        <ImageView
+            android:id="@+id/ivLiveIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin24"
+            android:src="@drawable/ic_like"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin24"
+        android:letterSpacing="0.03"
+        android:text="@string/comment_text"
+        android:textColor="@color/text_passive_Color"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginHorizontal="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin8"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin100"
+            android:layout_marginHorizontal="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin12"
+            android:background="@drawable/search_dialog_item_shape"
+            android:hint="@string/ed_comment_text"
+            android:paddingStart="@dimen/margin16"
+            android:paddingTop="@dimen/margin12"
+            android:gravity="top"
+            android:letterSpacing="0.05"
+            android:textSize="@dimen/text16sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin55"
+            android:layout_marginHorizontal="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin12"
+            android:layout_marginBottom="@dimen/margin32"
+            android:background="@drawable/search_dialog_btn_shape"
+            android:gravity="center"
+            android:hint="@string/leave_btn_text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/text16sp" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

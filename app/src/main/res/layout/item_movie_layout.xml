@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin12"
+    android:layout_marginHorizontal="@dimen/margin16"
+    android:paddingBottom="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/movie_item_shape">
+
+    <ImageView
+        android:id="@+id/ivListItem"
+        android:layout_width="@dimen/margin80"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin16"
+        android:layout_marginStart="@dimen/margin24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvMovieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin8"
+        android:text="Sherlock"
+        android:textColor="@color/app_blue"
+        android:textSize="@dimen/text16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ivListItem"
+        app:layout_constraintTop_toTopOf="@+id/ivListItem" />
+
+    <TextView
+        android:id="@+id/tvRealise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin16"
+        android:textColor="@color/text_passive_Color"
+        android:textSize="@dimen/text16sp"
+        app:layout_constraintStart_toEndOf="@+id/ivListItem"
+        app:layout_constraintTop_toBottomOf="@+id/tvMovieTitle" />
+
+    <TextView
+        android:id="@+id/tvItemType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin16"
+        android:text="Movie"
+        android:textColor="@color/text_passive_Color"
+        android:textSize="@dimen/text16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCommentIcon"
+        app:layout_constraintStart_toEndOf="@+id/ivListItem"
+        app:layout_constraintTop_toTopOf="@+id/ivCommentIcon" />
+
+    <ImageView
+        android:id="@+id/ivCommentIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_comment"
+        android:layout_marginEnd="@dimen/margin16"
+        app:layout_constraintEnd_toStartOf="@+id/ivLiveIcon"
+        app:layout_constraintTop_toTopOf="@+id/ivLiveIcon" />
+
+    <ImageView
+        android:id="@+id/ivLiveIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_like"
+        android:layout_margin="@dimen/margin24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/MovieMe/app/src/main/res/drawable/movie_item_shape.xml" value="0.1995" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/MovieMe/app/src/main/res/drawable/search_dialog_btn_shape.xml" value="0.2755" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/MovieMe/app/src/main/res/drawable/search_dialog_item_shape.xml" value="0.2755" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/MovieMe/app/src/main/res/drawable/search_dialog_shape.xml" value="0.2755" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/MovieMe/app/src/main/res/layout/activity_main.xml" value="0.3515625" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/MovieMe/app/src/main/res/layout/fragment_item_layout.xml" value="0.617816091954023" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/MovieMe/app/src/main/res/layout/fragment_search_layout.xml" value="0.33" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/MovieMe/app/src/main/res/layout/item_movie_layout.xml" value="0.33" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/MovieMe/app/src/main/res/layout/search_menu_layout.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
